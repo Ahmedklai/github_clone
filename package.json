@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.7.1",
+    "@material/react-chips": "^0.15.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,9 +12,29 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "apexcharts": "^3.36.3",
+    "apollo-client": "^2.6.10",
+    "date-fns": "^2.29.3",
+    "graphql": "^16.6.0",
+    "graphql-react": "^20.0.0",
+    "graphql-tag": "^2.12.6",
+    "history": "^5.3.0",
+    "node-fetch": "^3.3.0",
+    "ra-data-graphql": "^4.4.3",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-calendar-heatmap": "^1.9.0",
+    "react-chips": "^0.8.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.3.4",
+    "react-icons": "^4.7.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-loading-overlay-ts": "^2.0.0",
+    "react-query": "^3.39.2",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "react-simple-loading": "0.0.3",
+    "styled-components": "^5.3.6",
     "typescript": "^4.9.3",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +61,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-calendar-heatmap": "^1.6.3",
+    "@types/react-icons": "^3.0.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26"
   }
 }
