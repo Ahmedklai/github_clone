@@ -3,9 +3,12 @@
 [![Build Status](https://github.com/Ahmedklai/github_clone.git)]
 
 
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=feature-1)
+![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
 This project was part of an UI Clone challenge, the idea was to replicate (partially) the Github's Profile page using ReactJS , styled-components . I tried to use both SOLID and DRY principles along the way .
-
+Deployed [here](https://discord.ui-clone.ronne.dev).
 
 ![plot](./src/assets/images/1.png)
 ![plot](./src/assets/images/2.png)
@@ -13,7 +16,7 @@ This project was part of an UI Clone challenge, the idea was to replicate (parti
 ![plot](./src/assets/images/4.png)
 ![plot](./src/assets/images/5.png)
 
-Deployed [here](https://discord.ui-clone.ronne.dev).
+
 
 ## Features
 
@@ -28,33 +31,13 @@ Deployed [here](https://discord.ui-clone.ronne.dev).
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
 
 - [React] - HTML enhanced for web apps!
 - [GraphQl] - awesome web-based text editor
 - [StyledComponents] - Visual primitives for the component age.
 
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-## Plugins
-
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
 ## Development
-
-
 
 ## Available Scripts
 
@@ -108,10 +91,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
 ## License
