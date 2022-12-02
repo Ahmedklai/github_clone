@@ -1,23 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-export const InputSubmit = styled.input`
-  width: 320px;
-  height: 38px;
-  background: #0062ff;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  font-size: 12px;
-  text-align: center;
-  cursor: pointer;
-  :focus {
-    outline: none;
-  }
-  :disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-  }
-`;
+
 export default createGlobalStyle`
   * {
     margin: 0;

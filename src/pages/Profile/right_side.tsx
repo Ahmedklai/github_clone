@@ -16,16 +16,8 @@ import {
 } from "./styles";
 import ProfileData from "../../components/ProfileData";
 import RepoCard from "../../components/RepoCard";
-import RandomCalendar from "../../components/RandomCalendar";
 import useFetch from "../../hooks/customHooks/useFetch";
-import LoadingOverlay from "react-loading-overlay-ts";
 import { SEARCH_IN_REPOSITORIES_OF_CURRENT_USER } from "../../queries/queries";
-import {
-  GET_CURRENT_USER,
-  GET_REPOSITORIES_OF_CURRENT_USER,
-} from "../../queries/queries";
-import { Audio, ColorRing } from "react-loader-spinner";
-import { InputSubmit } from "../../styles/GlobalStyles";
 import { TabContent } from "../../components/TabContent";
 import LoadingComponent from "../../components/Loading/index";
 import GitHubCalendar from "react-github-calendar";

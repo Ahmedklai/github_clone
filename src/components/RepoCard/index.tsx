@@ -31,8 +31,6 @@ const RepoCard: React.FC<RepoModel> = ({
       <Topside>
         <header>
           <RepoIcon />
-          <Link to={`/${owner}/${name}`}>{name}</Link>
-          <Chip label="Public" />
         </header>
 
         <div dangerouslySetInnerHTML={{ __html: descriptionHTML }}></div>

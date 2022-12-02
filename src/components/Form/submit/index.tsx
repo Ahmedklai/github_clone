@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
+import { ButtonComponent } from "../../Button/index";
 const Wrapper = styled.div`
   display: flex;
   position: relative;
@@ -40,24 +41,6 @@ const InputText = styled.input`
     color: #fc5a5a;
   }
 `;
-const InputSubmit = styled.input`
-  width: 320px;
-  height: 38px;
-  background: #0062ff;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  font-size: 12px;
-  text-align: center;
-  cursor: pointer;
-  :focus {
-    outline: none;
-  }
-  :disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-  }
-`;
 
 // import { Container } from './styles';
 
@@ -92,11 +75,7 @@ const LoginFormSubmit: React.FC = () => {
           {/* {error.password ? 'Error, your password: admin' : ''} */}
         </InputLabel>
       </Wrapper>
-      <InputSubmit
-        type="submit"
-        value="Sign in"
-        //  disabled={!!(error.login || error.password)}
-      />
+      <ButtonComponent disabled={false} value="Sign in" />
       {/* {renderRedirect()} */}
     </form>
   );

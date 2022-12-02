@@ -1,7 +1,7 @@
 import React from "react";
 import { Section } from "../../pages/Profile/styles";
-import { InputSubmit } from "../../styles/GlobalStyles";
 import logo from "../../assets/images/logo_error.png";
+import { ButtonComponent } from "../Button/index";
 
 export default function ErrorComponent() {
   return (
@@ -11,8 +11,8 @@ export default function ErrorComponent() {
         AGAIN AND BE SURE OF THE VALIDITY OF YOUR TOKEN{" "}
       </h1>
       <img width={1000} src={logo} />
-      <InputSubmit
-        type="submit"
+      <ButtonComponent
+        disabled={false}
         value="Go Back To Home Page"
         //  disabled={!!(error.login || error.password)}
       />
