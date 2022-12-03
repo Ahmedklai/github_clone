@@ -38,7 +38,7 @@ const RepoCard: React.FC<RepoModel> = ({
             style={{
               border: "2px solid grey",
               padding: 5,
-              margin: 10,
+              margin: 5,
               borderRadius: 10,
               backgroundColor: "grey",
             }}
@@ -46,6 +46,7 @@ const RepoCard: React.FC<RepoModel> = ({
             <span style={{ color: "white" }}>public</span>
           </div>
         </header>
+
         <Wrapper>
           <div
             style={{ width: "70%" }}
@@ -60,7 +61,7 @@ const RepoCard: React.FC<RepoModel> = ({
             }}
           >
             <StarIcon />
-            <span> Star</span>
+            <span> star</span>
           </div>
         </Wrapper>
       </Topside>

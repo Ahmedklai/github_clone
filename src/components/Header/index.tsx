@@ -3,6 +3,7 @@ import React from "react";
 import { Container, GithubLogo } from "./styles";
 
 import { ThemeName } from "../../styles/themes";
+import DayNightToggle from "react-day-and-night-toggle";
 
 interface Props {
   themeName: ThemeName;
@@ -16,8 +17,8 @@ const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
 
   return (
     <Container>
-      <GithubLogo onClick={toggleTheme} />
-      <h3 style={{ color: "white" }}>GITHUB CLONE FOR MVST CODING CHALLENGE</h3>
+      <DayNightToggle onChange={toggleTheme} checked={themeName == "dark"} />
+      <h4 style={{ color: "white" }}>MVST GITHUB CLONE</h4>
     </Container>
   );
 };

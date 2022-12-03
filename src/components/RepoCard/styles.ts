@@ -17,6 +17,8 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  align-items: centre;
+  height: auto;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0px;

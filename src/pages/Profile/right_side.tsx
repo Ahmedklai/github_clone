@@ -4,7 +4,7 @@ import RepoCard from "../../components/RepoCard";
 import useFetch from "../../hooks/customHooks/useFetch";
 import { SEARCH_IN_REPOSITORIES_OF_CURRENT_USER } from "../../queries/queries";
 import { TabContent } from "../../components/TabContent";
-import LoadingComponent from "../../components/Loading/index";
+import { LoadingComponent } from "../../components/Loading/index";
 import GitHubCalendar from "react-github-calendar";
 
 interface IRightSideProps {
@@ -56,7 +56,7 @@ const RightSideComponent: React.FC<IRightSideProps> = ({ username }) => {
                 onChange={(value: any) => setSearch(value.currentTarget.value)}
               />
             </SearchForm>
-            {loading && <div> {<LoadingComponent />}</div>}
+            {loading && <div> {<LoadingComponent isProfile={false} />}</div>}
 
             {!loading && !error && (
               <div>

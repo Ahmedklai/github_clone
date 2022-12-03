@@ -26,23 +26,22 @@ const ProfileData: React.FC<ProfileDataModel> = ({
 }) => {
   return (
     <Container>
-      <Flex>
-        <Avatar
-          src={avatarUrl}
-          alt={username}
-          style={{
-            border: "2px solid",
-            padding: 10,
-            borderRadius: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.05)",
-          }}
-        />
+      <Avatar
+        src={avatarUrl}
+        alt={username}
+        style={{
+          border: "2px solid",
+          padding: 10,
+          width: "100%",
+          borderRadius: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.05)",
+        }}
+      />
 
-        <div>
-          <h1>{name}</h1>
-          <h2>{username}</h2>
-        </div>
-      </Flex>
+      <div>
+        <h1>{name}</h1>
+        <p>{username}</p>
+      </div>
 
       <Row>
         <li>

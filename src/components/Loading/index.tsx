@@ -1,20 +1,27 @@
 import React from "react";
 import { ColorRing } from "react-loader-spinner";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import RepoCard from "../RepoCard/index";
+import { Container } from "../RepoCard/styles";
+import { Avatar } from "../ProfileData/styles";
 
-export default function LoadingComponent() {
+interface Props {
+  isProfile: boolean;
+}
+
+export const LoadingComponent: React.FC<Props> = ({ isProfile }) => {
   return (
     <div>
       {
-        <ColorRing
-          visible={true}
-          height="80"
-          width="80"
-          ariaLabel="blocks-loading"
-          wrapperStyle={{}}
-          wrapperClass="blocks-wrapper"
-          colors={["#849b87", "#849b87", "#849b87", "#849b87", "#849b87"]}
+        <Skeleton
+          height={"30px"}
+          wrapper={Container}
+          width={"60%"}
+          highlightColor={"grey"}
+          enableAnimation={true}
         />
       }
     </div>
   );
-}
+};

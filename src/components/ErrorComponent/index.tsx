@@ -16,7 +16,7 @@ export default function ErrorComponent() {
         AN ERROR HAS OCCURED WHILE FETCHING DATA FROM GITHUB API , PLEASE TRY
         AGAIN AND BE SURE OF THE VALIDITY OF YOUR TOKEN{" "}
       </h1>
-      <img width={1000} src={logo} alt={"error logo"} />
+      <img width={"90%"} src={logo} alt={"error logo"} />
       <form onSubmit={handleSubmit}>
         <ButtonComponent disabled={false} value="Go Back To Home Page" />
       </form>
