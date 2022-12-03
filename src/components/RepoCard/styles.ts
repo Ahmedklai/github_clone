@@ -7,12 +7,21 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 16px;
+  width: 100%;
   border: 1px solid var(--border);
   border-radius: 6px;
+  @media (min-width: 768px) {
+    width: 60%;
+  }
 `;
 
-export const LeftSide = styled.div``;
-export const RightSide = styled.div``;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px;
+`;
+
 
 export const Topside = styled.div`
   > header {

@@ -48,7 +48,7 @@ const LoginFormSubmit: React.FC = () => {
   const navigate = useNavigate();
   const [token, setToken] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    const { name, value } = e.target;
+    const value = e.target.value;
     setToken(value);
   };
   const handleSubmit = (event: { preventDefault: () => void }) => {

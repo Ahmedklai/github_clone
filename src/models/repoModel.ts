@@ -7,4 +7,6 @@ export interface RepoModel {
   owner: string;
   stargazers: number;
   forks: number;
+  isStory: boolean;
+  updatedAt: string;
 }

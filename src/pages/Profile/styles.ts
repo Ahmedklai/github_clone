@@ -21,14 +21,14 @@ export const Main = styled.div`
 export const LeftSide = styled.div`
   padding: 100px var(--horizontalPadding);
   @media (min-width: 768px) {
-    width: 25%;
+    width: 100%;
   }
 `;
 
 export const RightSide = styled.div`
   padding: 0 var(--horizontalPadding);
   @media (min-width: 768px) {
-    width: 75%;
+    width: 60%;
   }
 `;
 
@@ -123,6 +123,9 @@ export const SearchForm = styled.form`
   width: 100%;
   padding-top: 12px;
   outline: 2em;
+  @media (min-width: 768px) {
+    width: 60%;
+  }
   input {
     background: var(--search);
     outline: 0;

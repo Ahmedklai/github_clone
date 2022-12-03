@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import LogoImage from "../Logo/Image";
 
@@ -21,7 +20,7 @@ interface ILogoProps {
 }
 
 const Logo = (props: ILogoProps) => {
-  const { image, title } = props;
+  const { image } = props;
 
   return (
     <Section>

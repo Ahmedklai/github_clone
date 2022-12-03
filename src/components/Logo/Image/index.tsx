@@ -6,10 +6,9 @@ interface ILogoImageProps {
 }
 
 const Image: React.FC<ILogoImageProps> = (props) => {
-  const { size, color } = props;
   const logo = require("../../../assets/images/logo.png");
 
-  return <img src={logo} />;
+  return <img src={logo} alt={"logo "} />;
 };
 
 export default Image;

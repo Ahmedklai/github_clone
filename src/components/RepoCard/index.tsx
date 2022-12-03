@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ChipSet, Chip } from "@material/react-chips";
-import "@material/react-chips/dist/chips.css";
 import {
   Container,
   Topside,
@@ -9,6 +7,7 @@ import {
   Botside,
   StarIcon,
   ForkIcon,
+  Wrapper,
 } from "./styles";
 import { RepoModel } from "../../models/repoModel";
 
@@ -21,6 +20,8 @@ const RepoCard: React.FC<RepoModel> = ({
   owner,
   stargazers,
   forks,
+  isStory,
+  updatedAt,
 }) => {
   const languageClass = primaryLanguage
     ? primaryLanguage.toLowerCase()
@@ -31,9 +32,37 @@ const RepoCard: React.FC<RepoModel> = ({
       <Topside>
         <header>
           <RepoIcon />
+          {!isStory && <Link to={`/profile`}>{name}</Link>}
+          {isStory && <h4>{name}</h4>}
+          <div
+            style={{
+              border: "2px solid grey",
+              padding: 5,
+              margin: 10,
+              borderRadius: 10,
+              backgroundColor: "grey",
+            }}
+          >
+            <span style={{ color: "white" }}>public</span>
+          </div>
         </header>
-
-        <div dangerouslySetInnerHTML={{ __html: descriptionHTML }}></div>
+        <Wrapper>
+          <div
+            style={{ width: "70%" }}
+            dangerouslySetInnerHTML={{ __html: descriptionHTML }}
+          ></div>
+          <div
+            style={{
+              border: "2px solid",
+              padding: 10,
+              borderRadius: 15,
+              backgroundColor: "rgba(0, 0, 0, 0.05)",
+            }}
+          >
+            <StarIcon />
+            <span> Star</span>
+          </div>
+        </Wrapper>
       </Topside>
 
       <Botside>
@@ -49,6 +78,9 @@ const RepoCard: React.FC<RepoModel> = ({
           <li>
             <ForkIcon />
             <span>{forks}</span>
+          </li>
+          <li>
+            <span>Updated On {updatedAt.split("T")[0]}</span>
           </li>
         </ul>
       </Botside>

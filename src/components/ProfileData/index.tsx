@@ -11,7 +11,6 @@ import {
   CompanyIcon,
   LocationIcon,
   EmailIcon,
-  BlogIcon,
 } from "./styles";
 
 const ProfileData: React.FC<ProfileDataModel> = ({
@@ -28,7 +27,16 @@ const ProfileData: React.FC<ProfileDataModel> = ({
   return (
     <Container>
       <Flex>
-        <Avatar src={avatarUrl} alt={username} />
+        <Avatar
+          src={avatarUrl}
+          alt={username}
+          style={{
+            border: "2px solid",
+            padding: 10,
+            borderRadius: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.05)",
+          }}
+        />
 
         <div>
           <h1>{name}</h1>

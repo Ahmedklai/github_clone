@@ -1,20 +1,5 @@
-// import { Container } from './styles';
 import React, { useState } from "react";
-import logo from "../../assets/images/logo_error.png";
-
-import {
-  Container,
-  Main,
-  LeftSide,
-  RightSide,
-  Repos,
-  CalendarHeading,
-  RepoIcon,
-  Tab,
-  SearchForm,
-  Section,
-} from "./styles";
-import ProfileData from "../../components/ProfileData";
+import { RightSide, Repos, Tab, SearchForm } from "./styles";
 import RepoCard from "../../components/RepoCard";
 import useFetch from "../../hooks/customHooks/useFetch";
 import { SEARCH_IN_REPOSITORIES_OF_CURRENT_USER } from "../../queries/queries";
@@ -33,14 +18,14 @@ const RightSideComponent: React.FC<IRightSideProps> = ({ username }) => {
   // To be DRY, utilize a custom hook for each API your app loads from, e.g.
   // `SEARCH_IN_REPOSITORIES_OF_CURRENT_USER`.
   const {
-    loading: loading,
+    loading,
     error: errorSearch,
-    data: data,
+    data,
   } = useFetch(SEARCH_IN_REPOSITORIES_OF_CURRENT_USER(search, username));
 
-  let error = errorSearch != undefined;
+  let error = errorSearch !== undefined;
   let edges: any[] = data ? data["search"]["nodes"] : null;
-  console.log(data);
+
   return (
     <div>
       {!error && (
@@ -56,10 +41,17 @@ const RightSideComponent: React.FC<IRightSideProps> = ({ username }) => {
             <span className="line" />
           </Tab>
           <Repos>
-            <h2>Pinned Repos</h2>
-            <SearchForm>
+            <SearchForm
+              style={{
+                border: "2px ",
+                padding: 10,
+                marginTop: "20px",
+                borderRadius: 15,
+                backgroundColor: "rgba(0, 0, 0, 0.05)",
+              }}
+            >
               <input
-                placeholder="Enter Username or Repo..."
+                placeholder="Enter Repo Name ..."
                 value={search}
                 onChange={(value: any) => setSearch(value.currentTarget.value)}
               />
@@ -80,8 +72,10 @@ const RightSideComponent: React.FC<IRightSideProps> = ({ username }) => {
                         ? repo["primaryLanguage"]["name"]
                         : null
                     }
+                    updatedAt={repo["updatedAt"]}
                     stargazers={repo["stargazers"]["totalCount"]}
                     forks={repo["forks"]["totalCount"]}
+                    isStory={false}
                   />
                 ))}
               </div>

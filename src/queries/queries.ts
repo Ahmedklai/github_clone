@@ -56,6 +56,7 @@ export function SEARCH_IN_REPOSITORIES_OF_CURRENT_USER(
             id
             name
             url
+            updatedAt
             descriptionHTML
             primaryLanguage {
               name

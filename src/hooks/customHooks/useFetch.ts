@@ -1,5 +1,4 @@
 import { DocumentNode, useQuery } from "@apollo/client";
-import { useState, useEffect } from "react";
 
 const useFetch = (query: DocumentNode) => {
   // The query is not just a string; we need to use `gql` from `graphql-tag`. The
