@@ -7,13 +7,14 @@ This project was part of an UI Clone challenge, the idea was to replicate (parti
 Also the the data Fetching we used GraphQl Api from Github and get along with their explorer to deliver the desired data to the front end 
 
 
-Deployed [here](https://638c4465113ea74de7b5e16f--mvstgithubclone.netlify.app).
+Deployed [here](https://638cf15e1c52d84f49601a53--mvstgithubclone.netlify.app).
+
 
 ![plot](./src/assets/images/1.png)
+![plot](./src/assets/images/mobile.png)
 ![plot](./src/assets/images/2.png)
 ![plot](./src/assets/images/3.png)
 ![plot](./src/assets/images/4.png)
-![plot](./src/assets/images/5.png)
 
 
 ## Features

@@ -12,10 +12,7 @@ export default function ErrorComponent() {
 
   return (
     <Section>
-      <h1>
-        AN ERROR HAS OCCURED WHILE FETCHING DATA FROM GITHUB API , PLEASE TRY
-        AGAIN AND BE SURE OF THE VALIDITY OF YOUR TOKEN{" "}
-      </h1>
+      <h1>An Error occured please try again</h1>
       <img width={"90%"} src={logo} alt={"error logo"} />
       <form onSubmit={handleSubmit}>
         <ButtonComponent disabled={false} value="Go Back To Home Page" />
