@@ -1,7 +1,6 @@
 ## MVST CLONE UI CHALLENGE BY AHMED KLAI
 
 
-
 ![](https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&color=61DAFB)  ![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)  ![](https://badgen.net/badge/HiredByMVST/YES/green?icon=github)  ![](https://badgen.net/badge/UpForChallenges/ALWAYS/blue?icon=github)
 
 This project was part of an UI Clone challenge, the idea was to replicate (partially) the Github's Profile page using ReactJS , styled-components , userStories . I tried to use both SOLID and DRY principles along the way .
@@ -9,6 +8,13 @@ Also the the data Fetching we used GraphQl Api from Github and get along with th
 
 
 Deployed [here](https://638c4465113ea74de7b5e16f--mvstgithubclone.netlify.app).
+
+![plot](./src/assets/images/1.png)
+![plot](./src/assets/images/2.png)
+![plot](./src/assets/images/3.png)
+![plot](./src/assets/images/4.png)
+![plot](./src/assets/images/5.png)
+
 
 ## Features
 
@@ -53,6 +59,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run storybook`
+
+It will start Storybook locally and output the address.\
+Depending on your system configuration, it will automatically \
+open the address in a new browser tab, and you'll be greeted by a welcome screen.
 
 ### `npm run build`
 
