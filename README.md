@@ -10,8 +10,8 @@ Also the the data Fetching we used GraphQl Api from Github and get along with th
 Deployed [here](https://638cf15e1c52d84f49601a53--mvstgithubclone.netlify.app).
 
 
-![plot](./src/assets/images/1.png)
 ![plot](./src/assets/images/mobile.png)
+![plot](./src/assets/images/1.png)
 ![plot](./src/assets/images/2.png)
 ![plot](./src/assets/images/3.png)
 ![plot](./src/assets/images/4.png)
