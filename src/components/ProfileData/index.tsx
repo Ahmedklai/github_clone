@@ -32,7 +32,7 @@ const ProfileData: React.FC<ProfileDataModel> = ({
         style={{
           border: "2px solid",
           padding: 10,
-          width: "100%",
+
           borderRadius: "100%",
           backgroundColor: "rgba(0, 0, 0, 0.05)",
         }}
