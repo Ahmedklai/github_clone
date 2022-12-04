@@ -36,14 +36,26 @@ const RepoCard: React.FC<RepoModel> = ({
           {isStory && <h4>{name}</h4>}
           <div
             style={{
-              border: "2px solid grey",
-              padding: 5,
-              margin: 5,
-              borderRadius: 10,
-              backgroundColor: "grey",
+              border: "1px solid lightgrey",
+              margin: "5px",
+              height: "20px",
+              width: "50px",
+              display: "flex",
+              alignItems: "centre",
+              justifyContent: "centre",
+              borderRadius: "10px",
             }}
           >
-            <span style={{ color: "white" }}>public</span>
+            <span
+              style={{
+                color: "grey",
+                fontSize: "12px",
+                paddingLeft: "6px",
+                paddingTop: "1px",
+              }}
+            >
+              Public
+            </span>
           </div>
         </header>
 
@@ -54,14 +66,19 @@ const RepoCard: React.FC<RepoModel> = ({
           ></div>
           <div
             style={{
-              border: "2px solid",
-              padding: 10,
-              borderRadius: 15,
+              border: "1px solid lightgrey",
+              padding: "10px",
+              height: "36px",
+              width: "72px",
+              display: "flex",
+              borderRadius: "8px",
               backgroundColor: "rgba(0, 0, 0, 0.05)",
+              alignItems: " center",
+              justifyContent: "space-between",
             }}
           >
             <StarIcon />
-            <span> star</span>
+            <span> Star</span>
           </div>
         </Wrapper>
       </Topside>
